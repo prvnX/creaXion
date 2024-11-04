@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+.App{
+  padding: 1rem ;
+
+}
+.head{
+  width:100%;
+}
+/*Header Styling*/
+.App-header {
+  font-size: 3.5rem;
+  margin: 0 auto; 
+  text-align: center;
+  color: white;
+  margin-top: 8%;
+  width: 70rem;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+
+.App-header h1 {
+  margin-bottom: 0;
+
+}
+
+.App-header p {
+  font-size: 1.6rem;
+  margin: 0; 
+  text-align: center;
+  color: white;
+  display: inline;
+  vertical-align: middle; 
+  font-weight: 500;
+}
+
+.App-header img {
+  width: 15%;
+  display: inline-block;
+  vertical-align: middle; 
+  margin: 0; 
+  padding: 0; 
+  margin-left: -10px;
+
+}
+.sinhala-heading{
+  font-family: "Abhaya Libre", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/*Input Styling*/
+.input-field{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1%;
+  background-color: white;
+  max-width: fit-content;
+  border: solid 0.4px white;
+  border-radius: 10px;
+}
+
+.input-field input{
+  width: 53rem;
+  height: 4rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  padding: 5px;
+  color: #0a125e;
+}
+
+/*Btn-Styling*/
+.input-field button{
+  background-color: rgb(228,0,25);
+  color: white;
+  border: none;
+  height: 4.7rem;
+  width: 10rem;
+  padding: 1rem;
+  border: solid 1px rgb(152, 7, 7);
+  border-radius: 10px;
+  font-family: "Helvetica Neue", sans-serif;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 400;
+
+}
+.input-field button:hover{
+  background-color: rgb(175, 5, 5);
+  transition: 0.3s;
+} 
+.input-field button img{
+  width: 19px;
+  margin-left: 0.2rem;
+
+}
+.sin-btn-txt{
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Input field dynamic placeholder animations*/
+
+/* Targeting the input placeholder */
+.inputfield::placeholder {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+/* Fade out placeholder */
+.inputfield.fade-out::placeholder {
+  opacity: 0;
+}
+
+/* Fade in placeholder */
+.inputfield.fade-in::placeholder {
+  opacity: 1;
+}
+
+/* Other input styling */
+.inputfield {
+  transition: all 0.5s ease; 
+}
+/* Gen-Image Styling */
+.genimg-section{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.genimg{
+  max-width: 90%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: solid 0.4px white;
+  border-radius: 10px;
+}
+.download-btn{
+  background-color: rgb(228,0,25);
+  color: white;
+  border: none;
+  height: 4.7rem;
+  width: 14rem;
+  padding: 1rem;
+  border: solid 1px rgb(152, 7, 7);
+  border-radius: 10px;
+  font-family: "Helvetica Neue", sans-serif;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 2%;
+}
+
+.loading{
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .App-header {
+    font-size: 2.5rem;
+    margin-top: 10%;
+    width: 90%;
+  }
+  .App-header img {
+    width: 20%;
+  }
+  .input-field input{
+    width: 80%;
+  }
+  .input-field button{
+    width: 100%;
+  }
+  .genimg{
+    max-width: 100%;
+  }
+  .download-btn{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .App-header {
+    font-size: 1.5rem;
+    margin-top: 10%;
+    width: 100%;
+  }
+  .App-header p{
+    font-size: 0.8rem;
+  }
+  .App-header img {
+    width: 20%;
+  }
+  .input-field input{
+    width: 250px;
+  }
+  .input-field button{
+    width: 100%;
+    height: 70%;
+  }
+  .input-field{
+    margin-top: 80px;
+    width: 100%;
+  }
+  .genimg{
+    max-width: 100%;
+  }
+  .download-btn{
+    width: 100%;
+  }
+}
